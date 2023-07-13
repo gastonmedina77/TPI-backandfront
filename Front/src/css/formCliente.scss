@@ -1,0 +1,89 @@
+.colorful-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+   width: 40%;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .tapar{
+    color: #fff;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d5d8dc;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -appearance:textfield; }
+  
+  textarea.form-input {
+    height: 100px;
+  }
+  .select{
+    width: 40%;
+  }
+  
+  .form-button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: #ff6f69;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #ff5f59;
+  }
+  .formAlert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    color: #ff6f69;
+  }
+  .check{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+  }
+  .tableForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tableForm tr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

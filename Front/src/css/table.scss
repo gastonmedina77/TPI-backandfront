@@ -1,0 +1,51 @@
+table{
+    border: 1px solid   #d5d8dc ;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+table thead tr{
+    display: flex;
+    justify-content: space-around;
+    border-left: 1px solid   #d5d8dc ;
+    border-right: 1px solid   #d5d8dc ;
+}
+tbody{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid   #d5d8dc ;
+    border-right: 1px solid   #d5d8dc ;
+    gap: 1.2rem;
+}
+tbody tr{
+    display: flex;
+    justify-content: space-around; 
+}
+tbody tr td .activoTable{
+    padding: 2px 7px;
+    border: 2px solid    #27ae60;
+    color:    #27ae60;
+    border-radius: 10px;
+}
+.buttonAction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+.buttonAction span{
+    cursor: pointer;
+}
+.buttonAction span:nth-child(1){
+    color: #28b463;
+}
+.buttonAction span:nth-child(2){
+    color:  #2e86c1;
+}
+.buttonAction span:nth-child(3){
+    color: #cb4335;
+}

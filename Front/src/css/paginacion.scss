@@ -1,0 +1,10 @@
+.containerPaginacion{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.containerPaginacion span{
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.navregistroventas{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navregistroventas ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.totalcompra{
+    font-size: 2rem;
+}

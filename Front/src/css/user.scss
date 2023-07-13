@@ -1,0 +1,42 @@
+.containerUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: .7rem;
+}
+.containerUser .contentUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.contentUser .avatar{
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    padding: 2px;
+    width: 6rem;
+    height: 6rem;
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #f4efd9;
+}
+.contentUser .booth{
+    color:  #3498db;
+    border: 2px solid  #3498db;
+    border-radius: 10px;
+    padding: 2px 3px;
+    font-weight: 600;
+}
+.contentUser .detallUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:var(--color-main);
+    font-weight: 600;
+}

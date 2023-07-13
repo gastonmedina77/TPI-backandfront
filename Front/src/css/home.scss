@@ -1,0 +1,42 @@
+.containerHome{
+    width: 100%;
+    height: 100%;
+    padding-top: .7rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
+    color:  #808b96 ;
+}
+.containerHome .contentHome{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    letter-spacing: 2px;
+}
+.contentHome .welcome{
+    display: flex;
+    flex-direction: column;
+    
+}
+.contentHome h1{
+  font-size: 3rem;
+}
+.contentHome h2{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+h2 span{
+    color: #2c3e50;
+}
+.containerHome img{
+    width: 30rem;
+    height: 30rem;
+}

@@ -1,0 +1,21 @@
+.containerNotification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: .7rem;
+}
+.containerNotification .contentNotification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .3rem;
+    border: 1px solid  #e59866 ;
+    border-radius: 10px;
+}
+.contentNotification h4{
+    color:  #e59866 ;
+}
+.contentNotification p{
+    color: #2c3e50;
+}

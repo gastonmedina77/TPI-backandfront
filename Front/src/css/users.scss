@@ -1,0 +1,146 @@
+.containerUser{
+    width: 100%;
+    height: 100%;
+    padding-top: .7rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
+    color:  #808b96 ;
+}
+.containerUser .contentUser{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    letter-spacing: 2px;
+   
+}
+.contentUser .headUsers{
+    border-bottom: 1px solid   #d5d8dc ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.history{
+    color:  #e74c3c ;
+
+}
+.gadgetUsers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.gadgetUsers .contentGadget{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid   #d5d8dc ;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.contentGadget:hover{
+    background:  #f2f4f4 ;
+}
+.contentGadget.active{
+    border-bottom: 2px solid #e74c3c;
+}
+
+.contentGadget .iconGadget{
+    font-size: 3rem;
+}
+.contentGadget h4{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contentGadget p{
+    font-size: .7rem;
+}
+.sectionTable{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    border-top: 1px solid   #d5d8dc ;
+}
+.sectionTable .viewTable{
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.viewTable h4{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.viewTable .bodyTable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid   #d5d8dc ;
+    border-radius: 10px;
+    padding: 5px;
+}
+.bodyTable .contentSearch{
+    
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
+   
+}
+.resumen{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.resumen span{
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  
+}
+.resumen .countClient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #e74c3c;
+    width: 4rem;
+    height: 4rem;
+}
+.resumen .countClient h2{
+   color: #e74c3c;
+   font-size: 3rem;
+}
+.headTable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headTable .addClient{
+    width: 9rem;
+    padding:  0 1rem;
+    border: 1px solid  #5499c7 ;
+    background:  #aed6f1;
+    transition: .3s;
+}
+.addClient:hover{
+    background:  #5dade2;
+}
