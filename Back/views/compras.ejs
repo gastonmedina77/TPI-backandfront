@@ -1,0 +1,57 @@
+<%- include('partials/headerEmi')  %>
+<h1>Compras</h1>
+        <h4>Nueva Compra</h4>
+        <form action="/guardarCompra" method="post">
+            <div class="row">
+                <div class="col">
+                    <input type="text"  name="proveedor" class="form-control" placeholder="Proveedor">
+                </div>
+                <div class="col">
+                    <input type="number"  name="precio" class="form-control" placeholder="Precio">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="number"  name="cantidad" class="form-control" placeholder="cantidad" >
+                </div>
+                <div class="col">
+                    <input type="number"  name="prod_id" class="form-control" placeholder="Producto Id">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Agregar
+            </button>
+        </form>
+
+<h4>Productos</h4>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">check</th>
+        <th scope="col">N°</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Categoria</th>
+      </tr>
+    </thead>
+    <tbody>
+            <% for(let i=0; i < data.length;  i++){ %>
+                
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </td>
+                    <td><%= i %></td>
+                    <td><%= data[i].producto_nombre%></td>
+                    <td><%= data[i].stock%></td>
+                    <td><%= data[i].precio%></td>
+                    <td><%= data[i].categoria%></td>
+                </tr>  
+            <%}%>
+            
+    </tbody>
+  </table>
+

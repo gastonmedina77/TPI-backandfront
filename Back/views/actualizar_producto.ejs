@@ -1,0 +1,25 @@
+
+<%- include('partials/header')  %>
+<h1>Actualizar datos</h1>
+
+<div class="col-md-5">
+    <div class="card">
+        <div class="card-body">
+            <form action="/actualizar/<%= data.producto_id%>" method="post">
+                <div class="form-group">
+                    <input type="text" name="nombre" value="<%= data.producto_nombre%>" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="stock" value="<%= data.stock%>" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="precio" value="<%= data.precio%>" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>   
+<%- include('partials/footer')  %>

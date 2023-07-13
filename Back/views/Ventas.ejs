@@ -1,0 +1,121 @@
+<%- include('partials/headerEmi'); %>
+    <h1>Ventas</h1>
+    <h4>Registrar una venta</h4>
+    <form action="/guardarventa" method="post">
+        <div class="row">
+            <div class="col">
+                <input type="text"  name="cliente" class="form-control" placeholder="Nombre del cliente">
+            </div>
+            <div class="col">
+                <input type="number"  name="precio" class="form-control" placeholder="Precio">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number"  name="cantidad" class="form-control" placeholder="cantidad" >
+            </div>
+            <div class="col">
+                <input type="number"  name="prod_id" class="form-control" placeholder="Producto Id">
+            </div>
+            <div class="col">
+                <input type="number"  name="venta_id" class="form-control" placeholder="venta Id">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            Agregar
+        </button>
+    </form>
+
+    <h2>ventas de un rango</h2>
+    <form action="/informeVentas" method="post">
+        <div class="row">
+            <div class="col">
+                <input type="date"  name="fecha_i" class="form-control" placeholder="fecha inicio">
+            </div>
+            <div class="col">
+                <input type="date"  name="fecha_f" class="form-control" placeholder="fecha final">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number"  name="cantidad" class="form-control" placeholder="cantidad" >
+            </div>
+            <div class="col">
+                <input type="number"  name="prod_id" class="form-control" placeholder="Producto Id">
+            </div>
+            <div class="col">
+                <input type="number"  name="venta_id" class="form-control" placeholder="venta Id">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            buscar
+        </button>
+    </form>
+    
+    <!-- <h4>Buscar Producto</h4>
+    <form action="#" method="#">
+        <div class="row">
+            <div yyclass="col">
+            <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            Buscar
+        </button>
+    </form>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Fecha</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0; i < data.length;  i++){ %>
+                <tr>
+                    <td><%= i %></td>
+                    <td><%= data[i].ventas_id %></td>
+                    <td><%= data[i].fecha %></td>
+                    <td><%= data[i].cliente %></td>
+                    <td>
+                        <a href="/eliminar/<%= data[i].ventas_id %>" class="btn btn-danger">Eliminar</a>
+                        <a href="/editar/<%= data[i].ventas_id %>" class="btn btn-info">Actualizar</a>
+                    </td>
+                </tr>
+            <%}%>
+        </tbody>
+      </table>
+     -->
+    <h4>Productos Cargados</h4>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">id</th>
+            <th scope="col">fecha</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Accion</th>
+          </tr>
+        </thead>
+        <tbody>
+                <% for(let i=0; i < data.length;  i++){ %>
+                    <tr>
+                        <td><%= i %></td>
+                        <td><%= data[i].ventas_id %></td>
+                        <td><%= data[i].fecha %></td>
+                        <td><%= data[i].cliente %></td>
+                        <td>
+                            <a href="/eliminar/<%= data[i].producto_id %>" class="btn btn-danger">Eliminar</a>
+                            <a href="/editar/<%= data[i].producto_id %>" class="btn btn-info">Actualizar</a>
+                        </td>
+                    </tr>
+                <%}%>
+        </tbody>
+      </table>
+<%- include('partials/footerEmi'); %>
+
