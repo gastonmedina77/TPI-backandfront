@@ -7,8 +7,8 @@ Cátedra: Desarrollo de Software - UTN FRRe
 
 El desarrollo fue dividido en dos partes: backend y frontend.
 Todo el desarrollo de cada una de las partes se encuentra subido a su respectiva carpeta:
-- En la carpeta backend encontrará todo el desarrollo del backend
-- En la carpeta frontend encontrará todo el desarrollo del frontend
+- En la carpeta backend encontrará todo el desarrollo del backend.
+- En la carpeta frontend encontrará todo el desarrollo del frontend.
 
 
 
